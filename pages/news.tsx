@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
-import Home from '../components/Home'
+import News from '../components/News'
 import Layout from '../components/Layout'
 
-const HomePage: NextPage = () => {
+const NewsPage: NextPage = () => {
   return (
     <Layout>
-      <Home />
+      <News />
     </Layout>
   )
 }
 
-export default HomePage
+export default NewsPage
