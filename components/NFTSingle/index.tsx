@@ -23,7 +23,6 @@ const NFT: React.FC<NFTProps> = ({ address, tokenId }) => {
     tokenId,
   })
   const token: INFTAssetData = data
-  console.log(token)
 
   if (isFetching) return <>Loading...</>
 

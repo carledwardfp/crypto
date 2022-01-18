@@ -30,7 +30,6 @@ const NFTPage: NextPage = () => {
   //   tokenId,
   // })
   const token: INFTAssetData = data
-  console.log(token)
 
   const MyAppBar: React.FC = () => {
     return (
