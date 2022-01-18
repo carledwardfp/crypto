@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import Appbar from '@mui/material/Appbar'
+import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Breadcrumbs from '@mui/material/Breadcrumbs'
 import Grid from '@mui/material/Grid'
@@ -28,7 +28,7 @@ const NFT: React.FC<NFTProps> = ({ address, tokenId }) => {
 
   return (
     <>
-      <Appbar
+      <AppBar
         color="default"
         position="sticky"
         elevation={0}
@@ -57,7 +57,7 @@ const NFT: React.FC<NFTProps> = ({ address, tokenId }) => {
             </Typography>
           </Breadcrumbs>
         </Toolbar>
-      </Appbar>
+      </AppBar>
       <Box>
         <Grid container>
           <Grid
