@@ -42,11 +42,6 @@ const categories = [
   },
 ]
 
-const item = {
-  py: '2px',
-  px: 3,
-}
-
 const logoStyle = {
   py: 1.5,
   px: 3,
@@ -76,6 +71,7 @@ const Sidebar = ({ setMobileOpen, ...props }: SidebarProps) => {
               <ListItem disablePadding key={childId}>
                 <Link
                   href={childId === 'Home' ? '/' : '/' + childId.toLowerCase()}
+                  passHref
                 >
                   <ListItemButton
                     sx={{ py: '2px', px: 3 }}

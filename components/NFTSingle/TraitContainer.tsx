@@ -33,7 +33,7 @@ const TraitContainer: React.FC<INFTAssetData> = (token) => {
       <Divider />
       <AccordionDetails>
         <Box>
-          {token.traits.map((trait) => (
+          {token.traits.map((trait, index) => (
             <Box
               display="inline-block"
               m={1.5}
@@ -44,6 +44,7 @@ const TraitContainer: React.FC<INFTAssetData> = (token) => {
               bgcolor="#2fc3cc0c"
               borderRadius={2}
               textAlign="center"
+              key={trait.value + index}
             >
               <Typography variant="body2">
                 {trait.trait_type.toUpperCase()}

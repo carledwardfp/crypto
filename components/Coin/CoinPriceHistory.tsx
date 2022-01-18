@@ -3,12 +3,9 @@ import { AxisOptions, Chart, UserSerie } from 'react-charts'
 import axios from 'axios'
 import moment from 'moment'
 import Color from 'color'
-import useSWR, { useSWRConfig } from 'swr'
+import useSWR from 'swr'
 
 import Box from '@mui/material/Box'
-import CircularProgress, {
-  CircularProgressProps,
-} from '@mui/material/CircularProgress'
 import Skeleton from '@mui/material/Skeleton'
 import ToggleButton from '@mui/material/ToggleButton'
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup'
@@ -44,7 +41,7 @@ const CoinPriceHistory: React.FC<CoinPriceHistoryProps> = ({
         data: lineData,
       },
     ],
-    [coinData]
+    [lineData]
   ) as UserSerie<ICoinPriceHistoryData>[]
 
   const primaryAxis = useMemo<AxisOptions<ICoinPriceHistoryData>>(

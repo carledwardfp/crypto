@@ -45,7 +45,7 @@ const CoinPriceHistory: React.FC<CoinPriceHistoryProps> = ({
         data: lineData,
       },
     ],
-    [coinData]
+    [lineData]
   ) as UserSerie<ICoinPriceHistoryData>[]
 
   const primaryAxis = useMemo<AxisOptions<ICoinPriceHistoryData>>(

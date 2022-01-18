@@ -22,9 +22,10 @@ const Home = () => {
             }}
           >
             <Typography variant="h4">Top Coins</Typography>
-            <Link href="/coins">
+            <Link href="/coins" passHref>
               <Typography
                 variant="body1"
+                component="a"
                 sx={{
                   display: 'flex',
                   alignItems: 'center',
@@ -47,9 +48,10 @@ const Home = () => {
             }}
           >
             <Typography variant="h4">Latest News</Typography>
-            <Link href="/news">
+            <Link href="/news" passHref>
               <Typography
                 variant="body1"
+                component="a"
                 sx={{
                   display: 'flex',
                   alignItems: 'center',
