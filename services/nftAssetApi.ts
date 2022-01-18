@@ -13,7 +13,6 @@ export const nftAssetApi = createApi({
   endpoints: (builder) => ({
     getNftAsset: builder.query({
       query: ({ address, tokenId }) => createRequest(`/${address}/${tokenId}`),
-      // transformResponse: (response) => { return await axios.get(response)}
     }),
   }),
 })
